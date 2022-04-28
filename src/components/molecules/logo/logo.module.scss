@@ -1,0 +1,18 @@
+@import '/src/styles/abstracts/mixins';
+
+.logo {
+  display: flex;
+
+  &__image {
+      height: auto;
+      width: 2rem;
+      margin-right: 0.5rem; 
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 800;
+    color: var(--blue-gray-800);
+  }
+}

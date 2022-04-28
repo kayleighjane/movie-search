@@ -1,0 +1,35 @@
+@import "../../../styles/abstracts/variables";
+
+.button-favorites {
+  border: solid 0.125rem var(--red-400);
+  background-color: var(--red-50);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-sizing: content-box;
+  box-shadow: var(--shadow-xs);
+  
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: var(--red-400);
+    padding: 0.75rem;
+  }
+}
+
+.button-favorites--alreadySelected {
+  border: solid 0.125rem var(--red-400);
+  background-color: var(--red-400);
+
+  .button-favorites__icon {
+    stroke: var(--white);
+  }
+}
+
+.button-favorites--remove {
+  border: solid 0.125rem var(--blue-gray-100);
+  background-color: var(--white);
+
+  .button-favorites__icon {
+    stroke: var(--blue-gray-500);
+  }
+}
